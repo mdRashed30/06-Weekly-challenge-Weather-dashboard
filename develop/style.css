@@ -6,18 +6,18 @@ body {
 
 h1 {
     background-color: hsl(166, 45%, 81%);
-    font-size: 50px;
+    font-size: 70px;
     color: red;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 50px;
 }
 
 h3 {
-    margin-top: 2rem;
+    margin-top: 30px;
 }
 
 #five-day-forecast {
@@ -42,9 +42,9 @@ h3 {
 }
 
 .city-name {
-    font-size: 3rem;
+    font-size: 50px;
 }
 
 .day-name {
-    font-size: 1.5rem;
+    font-size: 25px;
 }
