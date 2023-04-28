@@ -1,15 +1,14 @@
-body {
-    background-color: white;
+* {
+    font-family: 'Rubik Pixels', cursive;
 }
-
 
 
 h1 {
     background-color: hsl(166, 45%, 81%);
     font-size: 70px;
-    color: red;
+    color: green;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 h2 {
