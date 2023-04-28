@@ -118,7 +118,8 @@ function searchForFiveDayForecastWeather(city) {
           tempDiv.text("Temp: " + temp);
           humidityDiv.text("Humidity: " + humidity + "%");
           windDiv.text("Wind Speed: " + wind.speed + "mph");
-          // combine all values into one container
+
+          // all mixed values into one container
           rowDiv.append(dayDiv);
           rowDiv.append(weatherImg);
           rowDiv.append(tempDiv);
@@ -133,7 +134,7 @@ function searchForFiveDayForecastWeather(city) {
 }
 
 function getUVIndex(lat, lon) {
-  // lat={lat}&lon={lon}&exclude={part}&appid={API key}
+  //{lat}, {lon}, {part}, and {API key}
   var finalUrl =
     uvIndexBaseUrl +
     "lat=" +
