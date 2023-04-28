@@ -67,7 +67,7 @@ A weather dashboard that runs in the browser and features dynamically updated HT
 
 ## Screenshots:
 
-![Dau Scheduler](assets/screencapture-file-Users-mdmamatajurrashed-Desktop-bootcamp-Class-Projects-05-weekly-challange-develop-index-html-2023-04-21-00_57_21.png)
+![Weather Dashboard](develop/assets/photo/screencapture-file-Users-mdmamatajurrashed-Desktop-bootcamp-Class-Projects-06-weekly-challenge-index-html-2023-04-27-22_29_16.png)
 
 ## links
 
@@ -79,7 +79,7 @@ A weather dashboard that runs in the browser and features dynamically updated HT
 
 -- Video tutorial
 
--
+-- [OpenWather](https://openweathermap.org/forecast5)
 
 ## Credit:
 
@@ -87,4 +87,4 @@ Special thanks to my friends who help me -
 
 -- Indrojit Ghosh
 <br>
--- Mahabub
+-- Mahabub Hossen
