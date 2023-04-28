@@ -71,7 +71,7 @@ A weather dashboard that runs in the browser and features dynamically updated HT
 
 ## links
 
-- [Github Repo](https://github.com/mdRashed30/05-Weekly-challenge-Day-Scheduler)
+- [Github Repo](https://github.com/mdRashed30/06-Weekly-challenge-Weather-dashboard)
 
 - [Deployed Page](https://mdrashed30.github.io/06-Weekly-challenge-Weather-dashboard/)
 
