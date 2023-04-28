@@ -11,7 +11,7 @@ var searchHistoryBox = $("#past-history");
 var searchForm = $("#search-form");
 var currentWeatherBox = $("#current-weather");
 var fiveDayForecastBox = $("#five-day-forecast");
-var searchValueInput = $("#search-value");
+var searchValInput = $("#search-value");
 
 // Search History Variables
 
@@ -19,15 +19,15 @@ var searchHistory = [];
 
 // Search Form Event Listener
 
-searchForm.submit(function (event) {
-  event.preventDefault();
+searchForm.submit(function (e) {
+  e.preventDefault();
   var formValues = $(this).serializeArray();
   var city = formValues[0].value;
 
   // create element tho jQuery
   var searchTermDiv = $('<button type="button" class="btn past-search-term">');
-  searchTermDiv.click(function (event) {
-    event.preventDefault();
+  searchTermDiv.click(function (e) {
+    e.preventDefault();
     var value = $(this).text();
     searchForCurrentCityWeather(value);
     searchForFiveDayForecastWeather(value);
@@ -39,10 +39,9 @@ searchForm.submit(function (event) {
   searchTermDiv.text(city);
   searchHistoryBox.append(searchTermDiv);
   console.log(formValues, city);
-  // Real data from form
   searchForCurrentCityWeather(city);
   searchForFiveDayForecastWeather(city);
-  searchValueInput.val("");
+  searchValInput.val("");
 });
 
 // Get Current Weather
@@ -158,15 +157,15 @@ function getUVIndex(lat, lon) {
     });
 }
 
-function retrieveSearchHistory() {
+function reginSearchHistory() {
   if (localStorage.getItem("searchHistory")) {
     searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
     for (var i = 0; i < searchHistory.length; i++) {
       var searchTermDiv = $(
         '<button type="button" class="btn past-search-term">'
       );
-      searchTermDiv.click(function (event) {
-        event.preventDefault();
+      searchTermDiv.click(function (e) {
+        e.preventDefault();
 
         var value = $(this).text();
         console.log(value);
@@ -181,4 +180,4 @@ function retrieveSearchHistory() {
   }
 }
 
-retrieveSearchHistory();
+reginSearchHistory();
